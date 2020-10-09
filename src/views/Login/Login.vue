@@ -3,7 +3,7 @@
   <div class="loginContainer">
     <div class="loginInner">
       <div class="login_header">
-        <h2 class="login_logo">硅谷外卖</h2>
+        <h2 class="login_logo">Jonas外卖</h2>
         <div class="login_header_title">
           <a href="javascript:;" :class="{on: loginWay}" @click="loginWay=true">短信登录</a>
           <a href="javascript:;" :class="{on: !loginWay}" @click="loginWay=false">密码登录</a>
@@ -28,7 +28,7 @@
               <input type="tel" maxlength="8" placeholder="验证码" v-model="code" />
             </section>
             <section class="login_hint">
-              温馨提示：未注册硅谷外卖帐号的手机号，登录时将自动注册，且代表已同意
+              温馨提示：未注册帐号的手机号，登录时将自动注册，且代表已同意
               <a href="javascript:;">《用户服务协议》</a>
             </section>
           </div>
@@ -65,12 +65,14 @@
 
           <button class="login_submit">登录</button>
         </form>
-        <a href="javascript:;" class="about_us">关于我们</a>
+        <a href="javascript:;" class="about_us" @click="aboutMe">关于作者</a>
       </div>
 
       <a href="javascript:" class="go_back" @click="$router.back()">
         <i class="iconfont icon-jiantou2"></i>
       </a>
+
+      <AboutMe v-show="show"></AboutMe>
     </div>
 
     <AlerTip :alertText="alertText" v-show="showAlert" @closeTip="closeTip"></AlerTip>
@@ -92,6 +94,8 @@ import { reqSendCode, reqPwdLogin, reqSmsLogin } from "../../api";
 // 引入封装好的提示框组件（或者导入ui组件）
 import AlerTip from "../../components/AlerTip/AlerTip.vue";
 
+import AboutMe from './AboutMe'
+
 export default {
   data() {
     return {
@@ -109,6 +113,8 @@ export default {
       // ---表单提交校验弹出框
       alertText: "",
       showAlert: false,
+
+      show: false
     };
   },
 
@@ -224,10 +230,16 @@ export default {
       // e.target 为当前点击的图片，为图片每次指定一个不同的src值
       this.$refs.captcha.src = "http://localhost:4000/captcha?time=" + Date.now();
     },
+
+
+    aboutMe() {
+      this.show = true
+    }
   },
 
   components: {
     AlerTip,
+    AboutMe
   },
 };
 </script>
@@ -250,7 +262,7 @@ export default {
       .login_logo {
         font-size: 40px;
         font-weight: bold;
-        color: #02a774;
+        color: #FFC300;
         text-align: center;
       }
 
@@ -268,9 +280,9 @@ export default {
           }
 
           &.on {
-            color: #02a774;
+            color: #FFC300;
             font-weight: 700;
-            border-bottom: 2px solid #02a774;
+            border-bottom: 2px solid #FFC300;
           }
         }
       }
@@ -386,7 +398,7 @@ export default {
             line-height: 20px;
 
             >a {
-              color: #02a774;
+              color: #FFC300;
             }
           }
         }
@@ -397,8 +409,10 @@ export default {
           height: 42px;
           margin-top: 30px;
           border-radius: 4px;
-          background: #4cd96f;
-          color: #fff;
+          background: #FFC300;
+          color: #333;
+          letter-spacing 2px;
+          font-weight :700;
           text-align: center;
           font-size: 16pxF;
           line-height: 42px;
@@ -417,14 +431,15 @@ export default {
 
     .go_back {
       position: absolute;
-      top: 5px;
-      left: 5px;
+      top: 10px;
+      left: 10px;
       width: 30px;
       height: 30px;
 
       >.iconfont {
         font-size: 20px;
-        color: #999F;
+        color: #FFC300;
+        font-weight 700;
       }
     }
   }

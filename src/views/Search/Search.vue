@@ -125,10 +125,10 @@ export default {
       &.search_submit {
         float: right;
         width: 18%;
-        border: 4px solid #02a774;
+        border: 4px solid #FFC300;
         font-size: 16px;
-        color: #fff;
-        background-color: #02a774;
+        color: #333;
+        background-color: #FFC300;
       }
     }
   }

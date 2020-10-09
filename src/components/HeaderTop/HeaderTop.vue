@@ -29,13 +29,14 @@ export default {
 
 <style lang="stylus">
 .header {
-  background-color: #02a774;
+  background-color: #FFC300;
   position: fixed;
   z-index: 100;
   left: 0;
   top: 0;
   width: 100%;
   height: 45px;
+  z-index: 100
 
   .header_search {
     position: absolute;
@@ -47,7 +48,7 @@ export default {
 
     .icon-sousuo {
       font-size: 25px;
-      color: #fff;
+      color: #333;
     }
   }
 
@@ -57,26 +58,26 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-    color: #fff;
+    color: #333;
     text-align: center;
 
     .header_title_text {
       font-size: 20px;
-      color: #fff;
+      color: #333;
       display: block;
     }
   }
 
   .header_login {
     font-size: 14px;
-    color: #fff;
+    color: #333;
     position: absolute;
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
 
     .header_login_text {
-      color: #fff;
+      color: #333;
     }
   }
 }

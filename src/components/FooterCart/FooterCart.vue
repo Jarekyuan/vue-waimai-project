@@ -212,7 +212,7 @@ export default {
           background: #2b343c;
 
           &.highlight {
-            background: #009933;
+            background: #FFCC00;
           }
 
           .icon-shopping_cart {
@@ -221,7 +221,7 @@ export default {
             color: #80858a;
 
             &.highlight {
-              color: #fff;
+              color: #000;
             }
           }
         }
@@ -281,12 +281,14 @@ export default {
         color: #fff;
 
         &.not-enough {
-          background: #2b333b;
+          background: #333;
         }
 
         &.enough {
-          background: #00b43c;
-          color: #fff;
+          background: #FFCC00;
+          color: #000;
+          font-size 16px
+          letter-spacing 2px
         }
       }
     }

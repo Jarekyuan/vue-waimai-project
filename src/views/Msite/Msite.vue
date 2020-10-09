@@ -62,6 +62,8 @@
     </div>
   </section>
 </template>
+
+
 <script>
 // 引入轮播
 import Swiper from "swiper";
@@ -140,13 +142,15 @@ export default {
   width: 100%;
 
   .header {
-    background-color: #02a774;
+    background-color: #FFC300;
     position: fixed;
     z-index: 100;
     left: 0;
     top: 0;
     width: 100%;
     height: 45px;
+  z-index: 900
+
 
     .header_search {
       position: absolute;
@@ -158,7 +162,8 @@ export default {
 
       .icon-sousuo {
         font-size: 25px;
-        color: #fff;
+        color: #222;
+        font-weight: 500
       }
     }
 
@@ -168,33 +173,33 @@ export default {
       left: 50%;
       transform: translate(-50%, -50%);
       width: 50%;
-      color: #fff;
+      color: #333;
       text-align: center;
 
       .header_title_text {
-        font-size: 20px;
-        color: #fff;
+        font-size: 18px;
+        color: #333;
         display: block;
       }
     }
 
     .header_login {
       font-size: 14px;
-      color: #fff;
+      color: #333;
       position: absolute;
       right: 15px;
       top: 50%;
       transform: translateY(-50%);
 
       .header_login_text {
-        color: #fff;
+        color: #333;
       }
     }
   }
 
   .msite_nav {
     bottom-border-1px(#e4e4e4);
-    margin-top: 45px;
+    margin-top: 55px;
     height: 200px;
     background: #fff;
 

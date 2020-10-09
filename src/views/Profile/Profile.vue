@@ -82,7 +82,7 @@
             <i class="iconfont icon-vip"></i>
           </span>
           <div class="my_order_div">
-            <span>硅谷外卖会员卡</span>
+            <span>会员卡</span>
             <span class="my_order_icon">
               <i class="iconfont icon-jiantou1"></i>
             </span>
@@ -162,7 +162,7 @@ export default {
   overflow: hidden; // 页面不滑动
 
   .header {
-    background-color: #02a774;
+    background-color: #FFC300;
     position: fixed;
     z-index: 100;
     left: 0;
@@ -180,7 +180,7 @@ export default {
 
       .icon-sousuo {
         font-size: 25px;
-        color: #fff;
+        color: #333;
       }
     }
 
@@ -190,38 +190,38 @@ export default {
       left: 50%;
       transform: translate(-50%, -50%);
       width: 50%;
-      color: #fff;
+      color: #333;
       text-align: center;
 
       .header_title_text {
         font-size: 20px;
-        color: #fff;
+        color: #333;
         display: block;
       }
     }
 
     .header_login {
       font-size: 14px;
-      color: #fff;
+      color: #333;
       position: absolute;
       right: 15px;
       top: 50%;
       transform: translateY(-50%);
 
       .header_login_text {
-        color: #fff;
+        color: #333;
       }
     }
   }
 
   .profile-number {
-    margin-top: 45.5px;
+    margin-top: 45px;
 
     .profile-link {
       clearFix();
       position: relative;
       display: block;
-      background: #02a774;
+      background: #FFC300;
       padding: 20px 10px;
 
       .profile_image {
@@ -246,7 +246,7 @@ export default {
         p {
           font-weight: 700;
           font-size: 18px;
-          color: #fff;
+          color: #333;
 
           &.user-info-top {
             padding-bottom: 8px;
@@ -255,19 +255,19 @@ export default {
           .user-icon {
             display: inline-block;
             margin-left: -15px;
-            margin-right: 5px;
-            width: 20px;
-            height: 20px;
+            margin-right: 20px;
+            width: 10px;
+            height: 8px;
 
             .icon-mobile {
-              font-size: 30px;
+              font-size: 28px;
               vertical-align: text-top;
             }
           }
 
           .icon-mobile-number {
             font-size: 14px;
-            color: #fff;
+            color: #333;
           }
         }
       }
@@ -280,8 +280,9 @@ export default {
         top: 40%;
 
         .icon-jiantou1 {
-          color: #fff;
+          color: #333;
           font-size: 5px;
+          font-weight : 700
         }
       }
     }
@@ -311,26 +312,27 @@ export default {
 
           span {
             display: inline-block;
-            font-size: 30px;
-            color: #f90;
+            font-size: 25px;
+            color: #FFC300;
             font-weight: 700;
             line-height: 30px;
+            margin-right : 2px
           }
         }
 
         .info_data_bottom {
           display: inline-block;
           font-size: 14px;
-          color: #666;
+          color: #333;
           font-weight: 400;
-          padding-bottom: 10px;
+          padding-bottom: 20px;
         }
       }
 
       .info_data_link:nth-of-type(2) {
         .info_data_top {
           span {
-            color: #ff5f3e;
+            color: #FFC300;
           }
         }
       }
@@ -340,7 +342,7 @@ export default {
 
         .info_data_top {
           span {
-            color: #6ac20b;
+            color: #FFC300;
           }
         }
       }
@@ -362,6 +364,8 @@ export default {
         align-items: center;
         width: 20px;
         height: 20px;
+        margin-right 3px
+
 
         >.iconfont {
           margin-left: -10px;

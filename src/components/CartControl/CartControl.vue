@@ -54,9 +54,10 @@ export default {
   .icon-remove_circle_outline {
     display: inline-block;
     padding: 6px;
-    line-height: 24px;
-    font-size: 24px;
-    color: #009966;
+    line-height: 22px;
+    font-size: 22px;
+    color: #FFCC00;
+
 
     // 加消失的动画效果
     &.move-enter-active, &.move-leave-active {
@@ -82,9 +83,9 @@ export default {
   .icon-add_circle {
     display: inline-block;
     padding: 6px;
-    line-height: 24px;
-    font-size: 24px;
-    color: #009966;
+    line-height: 22px;
+    font-size: 22px;
+    color: #FFCC00;
   }
 }
 </style>

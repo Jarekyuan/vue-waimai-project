@@ -6,7 +6,7 @@
         <h3 class="section-title">配送信息</h3>
         <div class="delivery">
           <div>
-            <span class="delivery-icon">{{info.description}}</span>
+            <span class="delivery-icon">外卖专送 </span>
             <span>由商家配送提供配送，约{{info.deliveryTime}}分钟送达，距离{{info.distance}}</span>
           </div>
           <div class="delivery-money">配送费￥{{info.deliveryPrice}}</div>

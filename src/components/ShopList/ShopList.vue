@@ -11,7 +11,7 @@
       >
         <a>
           <div class="shop_left">
-            <img class="shop_img" :src="imgBaseUrl+shop.image_path" />
+            <img class="shop_img" src="./images/1.jpg" />
           </div>
           <div class="shop_right">
             <section class="shop_detail_header">
@@ -33,7 +33,7 @@
                 <div class="order_section">月售{{shop.recent_order_num}}单</div>
               </section>
               <section class="shop_rating_order_right">
-                <span class="delivery_style delivery_right">{{shop.delivery_mode.text}}</span>
+                <span class="delivery_style delivery_right">外卖专送</span>
               </section>
             </section>
             <section class="shop_distance">
