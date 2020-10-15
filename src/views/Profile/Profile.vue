@@ -76,7 +76,7 @@
             </span>
           </div>
         </a>
-        <!-- 硅谷外卖会员卡 -->
+        <!-- 外卖会员卡 -->
         <a href="javascript:" class="my_order">
           <span>
             <i class="iconfont icon-vip"></i>

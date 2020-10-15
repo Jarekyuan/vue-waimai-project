@@ -27,20 +27,6 @@
 
  Vue.use(VueRouter)
 
- //  let spinRoute = {
- //      show() { //加载中显示loading组件
- //          Indicator.open({ spinnerType: 'fading-circle' }); //开启loading组件，这里我用的mint-ui
- //      },
- //      resolve(resolve) { //加载完成隐藏loading组件
- //          return component => {
- //              setTimeout(() => {
- //                  Indicator.close() //关闭loading组件
- //                  resolve(component);
- //              }, 10)
- //          }
- //      }
- //  }
-
  export default new VueRouter({
      routes: [{ path: '/', redirect: '/msite' },
          {
